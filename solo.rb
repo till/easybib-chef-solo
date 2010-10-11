@@ -6,6 +6,5 @@ if !File.exist?(chef_dir) then
 end
 
 file_cache_path "#{chef_dir}"
-cookbook_path [ "#{chef_dir}/cookbooks" ]
+cookbook_path [ "/tmp/current-cookbooks" ]
 role_path "#{chef_dir}/roles"
-recipe_url "http://github.com/till/easybib-cookbooks/tarball/master"
